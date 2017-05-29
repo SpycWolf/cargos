@@ -1,0 +1,10 @@
+[package]
+name = "llvm-example"
+version = "0.1.0"
+authors = ["kota <Spyc@example.com>"]
+
+[[bin]]
+name = "main"
+
+[dependencies]
+llvm-sys = "0.2"
