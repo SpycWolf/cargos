@@ -1,7 +1,3 @@
-fn main() {
-    println!("Hello, world!");
-}
-
 extern crate llvm_sys as llvm;
 
 use std::ptr;
@@ -21,7 +17,7 @@ fn main() {
 
         llvm::core::LLVMBuildRetVoid(builder);
 
-        llvm::core::LLDumpModule(module);
+        llvm::core::LLVMDumpModule(module);
 
         llvm::core::LLVMDisposeBuilder(builder);
         llvm::core::LLVMDisposeModule(module);
